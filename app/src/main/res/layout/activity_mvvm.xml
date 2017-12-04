@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="org.tinybag.www.android_mvc_mvp_mvvm.mvvm.MVVMViewModel"
+            />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="org.tinybag.www.android_mvc_mvp_mvvm.mvvm.MVVMActivity">
+
+
+        <TextView
+            android:id="@+id/mvvmappname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:text="Login App MVVM :"/>
+
+        <TextView
+            android:layout_below="@id/mvvmappname"
+            android:id="@+id/mvvmlblusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:text="User Name :"/>
+
+        <EditText
+            android:layout_below="@id/mvvmlblusername"
+            android:id="@+id/mvvmedtusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{data.Username.get()}"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:addTextChangedListener="@{data.watcherUsername}"
+            />
+
+        <TextView
+            android:layout_below="@id/mvvmedtusername"
+            android:id="@+id/mvvmlblpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:text="Password :"/>
+
+        <EditText
+            android:layout_below="@id/mvvmlblpassword"
+            android:id="@+id/mvvmedtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{data.Password.get()}"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:addTextChangedListener="@{data.watcherPassword}"
+            />
+
+        <Button
+            android:layout_below="@id/mvvmedtpassword"
+            android:id="@+id/mvvmbutton"
+            android:text="On Submit"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:onClick="@{data.OnButtonClick}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</layout>

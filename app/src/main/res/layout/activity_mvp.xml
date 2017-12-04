@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.tinybag.www.android_mvc_mvp_mvvm.mvp.MVPActivity">
+
+    <TextView
+        android:id="@+id/mvpappname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:text="Login App MVP :"/>
+
+    <TextView
+        android:layout_below="@id/mvpappname"
+        android:id="@+id/mvplblusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:text="User Name :"/>
+
+    <EditText
+        android:layout_below="@id/mvplblusername"
+        android:id="@+id/mvpedtusername"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_below="@id/mvpedtusername"
+        android:id="@+id/mvplblpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:text="Password :"/>
+
+    <EditText
+        android:layout_below="@id/mvplblpassword"
+        android:id="@+id/mvpedtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_below="@id/mvpedtpassword"
+        android:id="@+id/mvpbutton"
+        android:text="On Submit"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

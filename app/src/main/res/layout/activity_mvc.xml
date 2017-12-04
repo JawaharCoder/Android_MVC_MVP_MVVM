@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.tinybag.www.android_mvc_mvp_mvvm.mvc.MVCActivity">
+
+
+    <TextView
+        android:id="@+id/mvcappname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:text="Login App MVC :"/>
+
+    <TextView
+        android:layout_below="@id/mvcappname"
+        android:id="@+id/mvclblusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:text="User Name :"/>
+
+    <EditText
+        android:layout_below="@id/mvclblusername"
+        android:id="@+id/mvcedtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_below="@id/mvcedtusername"
+        android:id="@+id/mvclblpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:text="Password :"/>
+
+    <EditText
+        android:layout_below="@id/mvclblpassword"
+        android:id="@+id/mvcedtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_below="@id/mvcedtpassword"
+        android:id="@+id/mvcbutton"
+        android:text="On Submit"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

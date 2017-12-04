@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.tinybag.www.android_mvc_mvp_mvvm.MainActivity">
+
+    <Button
+        android:onClick="openLayout"
+        android:id="@+id/MVC"
+        android:text="Login Using MVC"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="openLayout"
+        android:id="@+id/MVP"
+        android:text="Login Using MVP"
+        android:layout_below="@id/MVC"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="openLayout"
+        android:id="@+id/MVVM"
+        android:text="Login Using MVVM"
+        android:layout_below="@id/MVP"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:text="Username : admin\nPassword : admin"
+        android:layout_below="@id/MVVM"
+        android:layout_marginBottom="5dp"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
